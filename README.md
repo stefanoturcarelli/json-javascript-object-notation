@@ -1,6 +1,22 @@
 # JSON
 JSON stands for JavaScript Object Notation. It is a text-based data format following JavaScript object syntax. Even though it closely resembles JavaScript object literal syntax, it can be used independently from JavaScript, and many programming environments feature the ability to read (parse) and generate JSON.
 
+JSON exists as a string — useful when you want to transmit data across a network. It needs to be converted to a native JavaScript object when you want to access the data. This is not a big issue — JavaScript provides a global JSON object that has methods available for converting between the two.
+
+```jsx
+{
+		"name": "John Doe",
+		"age": 30,
+		"address": {
+			"street": "123 Main St",
+			"city": "Anytown",
+			"state": "Anystate",
+			"zip": "12345"
+		},
+		"hobbies": ["reading", "gaming", "hiking"]
+	}
+```
+
 ## `JSON.stringify()`
 
 `JSON.stringify()` converts a JavaScript object or value to a JSON string. 
